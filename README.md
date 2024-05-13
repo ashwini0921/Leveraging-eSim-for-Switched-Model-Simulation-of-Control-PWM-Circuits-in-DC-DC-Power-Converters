@@ -10,3 +10,31 @@ process. This way, when surprises pop up, they can manage them. Modelling and si
 methods will be applied on popular control PWM Integrated Circuits UC 1525 and UC 
 1846. Different elements, including the oscillator, error amplifier, and comparator are 
 designed and simulated with subcircuits. 
+
+# Software Used
+## eSim
+
+It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD.
+For more details refer:
+https://esim.fossee.in/home
+
+## NgSpice
+
+It is an Open Source Software for Spice Simulations. For more details refer:
+http://ngspice.sourceforge.net/docs.html
+
+# Acknowlegdements
+
+1. FOSSEE, IIT Bombay
+4. Sumanto Kar, eSim Team, FOSSEE
+6. https://spoken-tutorial.org/
+
+# References
+
+1. SWITCHED MODEL OF CONTROL CIRCUITS-FOR DC-DC SWITCHING CONVERTERS: 
+APPLICATION TO INTEGRATED CIRCUITS UC1525 AND UC1846. Alfonso Lago, Carlos M. 
+Pefialver, Jeslis Cea. Dpto. Tecnologia Electr6nica. E.T.S.I.I. Universidad de Vigo. Lagoas
+Marcosende,g. Apartado Oficial. 36200-VIGOSPAIN.
+2. esim.fossee.in › circuit-simulation-projectTo study of High & Low frequency response of FET - 
+esim.fossee.in 
+3. https://github.com/FOSSEE/eSim
