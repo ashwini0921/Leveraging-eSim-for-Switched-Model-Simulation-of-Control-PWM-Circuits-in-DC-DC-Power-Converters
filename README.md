@@ -41,20 +41,20 @@ http://ngspice.sourceforge.net/docs.html
 
 7. To run the project UC1525 OSC in eSim:
 
-1)  Run eSim
-2)  Load the project named uc1525osc1
-3)  Click on Simulate
-4)  In ngspice terminal write the following command:
+1)    Run eSim
+2)    Load the project named uc1525osc1
+3)    Click on Simulate
+4)    In ngspice terminal write the following command:
 
      plot v(outt),v(outr)
 
 
 8. To run the project UC1525 ERROR AMPLIFIER in eSim:
 
-1)  Run eSim
-2)  Load the project named uc1525_error_amplifier
-3)  Click on Simulate
-4)  In ngspice terminal write the following command:
+1)    Run eSim
+2)    Load the project named uc1525_error_amplifier
+3)    Click on Simulate
+4)    In ngspice terminal write the following command:
 
      plot v(out)
 
