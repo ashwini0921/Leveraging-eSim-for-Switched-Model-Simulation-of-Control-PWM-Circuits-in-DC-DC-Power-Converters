@@ -22,6 +22,38 @@ https://esim.fossee.in/home
 It is an Open Source Software for Spice Simulations. For more details refer:
 http://ngspice.sourceforge.net/docs.html
 
+
+# Steps to run this project
+
+
+1. Open a new terminal
+2. Change directory:
+
+       cd eSim-Workspace
+3. Clone this project using the following command:
+
+       git clone https://github.com/ashwini0921/Leveraging-eSim-for-Switched-Model-Simulation-of-Control-PWM-Circuits-in-DC-DC-Power-Converters.git
+5. Run ngspice:
+
+        ngspice uc1525osc1.cir.out
+        ngspice uc1525_error_amplifier.cir.out
+7. To run the project UC1525 OSC in eSim:
+
+1)  Run eSim
+2)  Load the project named uc1525osc1
+3)  Click on Simulate
+4)  In ngspice terminal write the following command:
+            plot v(outt),v(outr)
+
+
+7. To run the project UC1525 ERROR AMPLIFIER in eSim:
+
+1)  Run eSim
+2)  Load the project named uc1525_error_amplifier
+3)  Click on Simulate
+4)  In ngspice terminal write the following command:
+            plot v(out)
+
 # Acknowlegdements
 
 1. FOSSEE, IIT Bombay
