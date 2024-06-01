@@ -7,8 +7,7 @@ layout. The simulation model is designed using eSim simulation software, which a
 powerful environment for circuit simulations and analysis. eSim being the link between the 
 abstract circuit design and the practical implementation, the designers can shortcut the design 
 process. This way, when surprises pop up, they can manage them. Modelling and simulation 
-methods will be applied on popular control PWM Integrated Circuits UC 1525 and UC 
-1846. Different elements, including the oscillator, error amplifier, and comparator are 
+methods will be applied on popular control PWM Integrated Circuits UC 1525. Different elements, including the oscillator, error amplifier, and comparator are 
 designed and simulated with subcircuits. 
 
 # Software Used
