@@ -1,0 +1,22 @@
+* /home/ashwini/eSim-Workspace/uc1525_error_amplifier1/uc1525_error_amplifier1.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sat May 18 19:55:40 2024
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+Q3  Net-_I2-Pad2_ Net-_Q3-Pad2_ Net-_Q1-Pad1_ eSim_PNP		
+Q4  Net-_Q3-Pad2_ Net-_Q3-Pad2_ Net-_Q1-Pad1_ eSim_PNP		
+Q1  Net-_Q1-Pad1_ Net-_I2-Pad2_ Net-_I1-Pad2_ eSim_NPN		
+Q2  Net-_I2-Pad2_ GND Net-_I1-Pad2_ eSim_NPN		
+Q5  Net-_I2-Pad2_ Net-_I2-Pad2_ Net-_Q3-Pad2_ eSim_PNP		
+I1  GND Net-_I1-Pad2_ dc		
+I2  GND Net-_I2-Pad2_ dc		
+U1  GND Net-_I2-Pad2_ zener		
+v2  Net-_Q1-Pad1_ GND DC		
+v1  GND Net-_I2-Pad2_ sine		
+R1  Net-_I2-Pad2_ out 10k		
+C1  out GND 0.001u		
+
+.end

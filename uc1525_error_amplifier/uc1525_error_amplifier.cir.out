@@ -1,0 +1,28 @@
+* /home/ashwini/esim-workspace/uc1525_error_amplifier1/uc1525_error_amplifier1.cir
+
+.include NPN.lib
+.include PNP.lib
+q3 net-_i2-pad2_ net-_q3-pad2_ net-_q1-pad1_ Q2N2907A
+q4 net-_q3-pad2_ net-_q3-pad2_ net-_q1-pad1_ Q2N2907A
+q1 net-_q1-pad1_ net-_i2-pad2_ net-_i1-pad2_ Q2N2222
+q2 net-_i2-pad2_ gnd net-_i1-pad2_ Q2N2222
+q5 net-_i2-pad2_ net-_i2-pad2_ net-_q3-pad2_ Q2N2907A
+i1 gnd net-_i1-pad2_  dc 0.2m
+i2 gnd net-_i2-pad2_  dc 0.1m
+* u1  gnd net-_i2-pad2_ zener
+v2 net-_q1-pad1_ gnd  dc 12
+v1  gnd net-_i2-pad2_ sine(0 5m 100 0 0) ac -1
+r1  net-_i2-pad2_ out 10k
+c1  out gnd 0.001u
+a1 gnd net-_i2-pad2_ u1
+* Schematic Name:                             zener, NgSpice Name: zener
+.model u1 zener(v_breakdown=5.6 i_breakdown=2.0e-2 i_sat=1.0e-12 n_forward=1.0 limit_switch=FALSE ) 
+.ac dec 1000 10Hz 100Meg
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

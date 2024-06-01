@@ -1,0 +1,18 @@
+* /home/ashwini/eSim-Workspace/uc1525osc1/uc1525osc1.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sat Jun  1 14:20:55 2024
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  Net-_X1-Pad2_ GND DC		
+R1  GND Net-_R1-Pad2_ 7k		
+R2  Net-_C1-Pad1_ Net-_R2-Pad2_ 10k		
+C1  Net-_C1-Pad1_ GND 0.05u		
+U2  outr plot_v1		
+U1  outt plot_v1		
+v2  GND Net-_X1-Pad1_ DC		
+X1  Net-_X1-Pad1_ Net-_X1-Pad2_ Net-_R2-Pad2_ Net-_R1-Pad2_ Net-_C1-Pad1_ GND outr outt uc1525b_osc1		
+
+.end

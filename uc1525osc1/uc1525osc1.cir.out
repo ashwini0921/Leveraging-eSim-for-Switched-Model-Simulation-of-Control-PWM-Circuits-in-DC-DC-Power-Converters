@@ -1,0 +1,22 @@
+* /home/ashwini/esim-workspace/uc1525osc1/uc1525osc1.cir
+
+.include ucosc1.sub
+v1 net-_x1-pad2_ gnd  dc 5
+r1  gnd net-_r1-pad2_ 7k
+r2  net-_c1-pad1_ net-_r2-pad2_ 10k
+c1  net-_c1-pad1_ gnd 0.05u
+* u2  outr plot_v1
+* u1  outt plot_v1
+v2 gnd net-_x1-pad1_  dc 5
+x1 net-_x1-pad1_ net-_x1-pad2_ net-_r2-pad2_ net-_r1-pad2_ net-_c1-pad1_ gnd outr outt ucosc1
+.tran 0.1e-06 15e-03 5e-03
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(outr)
+plot v(outt)
+.endc
+.end
